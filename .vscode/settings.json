@@ -5,7 +5,19 @@
     "python.linting.flake8Enabled": true,
     "python.linting.enabled": true,
     "[python]": {
-        "editor.formatOnSave": true
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true,
+        },
      },
-     "files.trimFinalNewlines": true,
+    "files.trimFinalNewlines": true,
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./tests",
+        "-p",
+        "test_*.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestEnabled": true,
 }
