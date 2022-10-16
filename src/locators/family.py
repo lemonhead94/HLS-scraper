@@ -1,2 +1,2 @@
 class FamilyPageLocator:
-    NAME = ("span", {"class": "hls-lemma"})
+    FAMILY_NAME = ("span", {"class": "hls-lemma"})
