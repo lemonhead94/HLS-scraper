@@ -23,7 +23,7 @@ class TestPerson(unittest.TestCase):
         publish_date_element = self.browser.page.find(
             "div", {"class": "hls-article-info"}
         ).text
-        publish_date = re.search(r"\d{2}\.\d{2}\.\d{4}", publish_date_element).group()
+        publish_date = re.search(r"\d{2}\.\d{2}\.\d{4}", publish_date_element).group()  # type: ignore
         self.assertEqual(publish_date, expected_publish_date)
 
     def test_get_article_author(self):
