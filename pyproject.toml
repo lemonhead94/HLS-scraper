@@ -17,6 +17,7 @@ packages = [
 [tool.poetry.dependencies]
 python = "^3.9"
 MechanicalSoup = "^1.2.0"
+pandas = "^1.5"
 
 [tool.poetry.dev-dependencies]
 black = "^22.10.0"

@@ -18,7 +18,7 @@ class Article:
         """returns the translator of the article"""
         author_element = self.page.find(*ArticlePageLocator.AUTHOR)
         if author_element is None or len(author_element.contents) < 5:
-            raise ValueError("Translator not found")
+            return ""
         return str(author_element.contents[4].strip())
 
     def get_publish_date(self) -> str:
