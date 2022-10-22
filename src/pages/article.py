@@ -9,8 +9,11 @@ class Article:
 
     def get_author(self) -> str:
         """returns the author of the article"""
-        author_element = self.page.find(*ArticlePageLocator.AUTHOR)
-        if author_element is None or len(author_element.contents) < 3:
+        author_element = self.page.find_all(*ArticlePageLocator.AUTHOR)
+        if author_element is None:
+            raise ValueError("Author not found")
+        author_element = author_element[-1]
+        if len(author_element.contents) < 3:
             raise ValueError("Author not found")
         return str(author_element.contents[2].strip())
 
@@ -25,7 +28,8 @@ class Article:
         """returns the publication date of the article"""
         publish_date_element = self.page.find(*ArticlePageLocator.PUBLISH_DATE)
         if publish_date_element is None:
-            raise ValueError("Publish Date not found")
+            return ""
+            # raise ValueError("Publish Date not found")
         return str(ArticlePageLocator.extract_date(publish_date_element.text))
 
     def get_text(self) -> str:

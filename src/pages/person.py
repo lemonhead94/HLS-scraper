@@ -22,9 +22,7 @@ class Person(Article):
     def get_last_name(self) -> str:
         """returns the last name of a person"""
         family_name = self.page.find(**PersonPageLocator.FAMILY_NAME)
-        if family_name is None:
-            raise ValueError("Given Name not found")
-        return str(family_name.text)
+        return str(family_name.text) if family_name else ""
 
     def get_date_of_birth(self) -> str:
         """returns the date of birth of a person"""

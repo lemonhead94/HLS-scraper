@@ -119,7 +119,7 @@ def main(
         for index, row in df_new_hls_records.iterrows():
             time.sleep(crawl_delay)
             print(
-                f"Adding new person records {index} out of {df_new_hls_records.shape[0]} | ID: {row.ID} | URL: {row.URL}"
+                f"Adding new person records {index} out of {df_hls_bio.shape[0]} | ID: {row.ID} | URL: {row.URL}"
             )
             browser.open(row.URL)
             person_page = Person(page=browser.page)
@@ -143,6 +143,13 @@ def main(
 
     except Exception as e:
         log_exception(e)
+        if isinstance(e, ConnectionError):
+            time.sleep(60)
+            main(
+                last_scraping="15.10.2022",
+                crawl_delay=2,
+                scraper_csv_path="hls_people.csv",
+            )
     finally:
         browser.close()
 

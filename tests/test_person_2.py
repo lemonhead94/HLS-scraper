@@ -7,8 +7,8 @@ from src.pages import Person
 
 
 def dump_html(
-    url: str = "https://hls-dhs-dss.ch/de/articles/012450/2001-06-05/",
-    path: str = "/tests/mocks/mock_Person_5.html",
+    url: str = "https://hls-dhs-dss.ch/de/articles/033519/2004-06-22/",
+    path: str = "/tests/mocks/mock_Person_7.html",
 ) -> None:
     html_file2 = os.getcwd() + path
     browser = mechanicalsoup.StatefulBrowser()
