@@ -8,9 +8,9 @@ This project is a webscraper for the [Historical Dictionary of Switzerland (HDS)
 pip install hlsscraper
 ````
 
-# Usage
+## Usage
 
-Please use the already scraped [hls_base.csv](https://github.com/lemonhead94/HLS-scraper/tree/main/data) from 12.12.2022 as basis so only updates and new records need to be fetched.
+Please use the already scraped [hls_base.csv](https://github.com/lemonhead94/HLS-scraper/blob/main/data/hls_base.csv) from 12.12.2022 as basis so only updates and new records need to be fetched.
 This will help not to stress HLS servers to much.
 
 ````python
