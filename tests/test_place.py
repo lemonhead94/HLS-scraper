@@ -3,7 +3,7 @@ import unittest
 
 import mechanicalsoup
 
-from src.pages import Place
+from hlsscraper.pages import Place
 
 
 class TestPlace(unittest.TestCase):

@@ -3,7 +3,7 @@ import unittest
 
 import mechanicalsoup
 
-from src.pages import Family
+from hlsscraper.pages import Family
 
 
 class TestFamily(unittest.TestCase):

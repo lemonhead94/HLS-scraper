@@ -3,7 +3,7 @@ import unittest
 
 import mechanicalsoup
 
-from src.pages import Person
+from hlsscraper.pages import Person
 
 
 def dump_html(

@@ -4,7 +4,7 @@ from datetime import datetime
 
 import mechanicalsoup
 
-from src.pages import OpenData
+from hlsscraper.pages import OpenData
 
 
 class TestOpenData(unittest.TestCase):

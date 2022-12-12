@@ -46,5 +46,3 @@ dist/**
 *.xlf
 *.nls.*.json
 *.i18n.json
-scraper.log
-hls_people.csv
