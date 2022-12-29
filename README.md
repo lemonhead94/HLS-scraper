@@ -7,29 +7,28 @@ This project is a webscraper for the [Historical Dictionary of Switzerland (HDS)
 The Web Scraper was written using the [Page Object Model Pattern](https://medium.com/tech-tajawal/page-object-model-pom-design-pattern-f9588630800b). There are automated Unit Tests provided in test folder.
 
 ```
-|--DWH_dags
-    |--.github\workflows\
-        |--main.yml                      # Running Automated Unit Tests on each Commit
-    |--.vscode\
-        |--settings.josn                 # VScode Development Settings
-    |--data\                             # Base Data Folder provided so that people don't need to rescrape HLS from scratch (12.12.2022)
-        |--hls_base.csv                  
-    |--hlsscraper\
-        |--locators\                     # Selectors
-            |--article.py
-            |--family.py
-            |--open_data.py
-            |--person.py
-            |--place.py
-        |--pages\                        # Pages
-            |--article.py
-            |--family.py
-            |--logging_utils.py
-            |--open_data.py
-            |--person.py
-            |--place.py
-        |--scraper.py                    # Web-Scraper
-    |--tests\                            # Unit Tests
+|--.github\workflows\
+    |--main.yml                      # Running Automated Unit Tests on each Commit
+|--.vscode\
+    |--settings.json                 # VScode Development Settings
+|--data\                             # Base Data Folder provided so that people don't need to rescrape HLS from scratch (12.12.2022)
+    |--hls_base.csv                  
+|--hlsscraper\
+    |--locators\                     # Selectors
+        |--article.py
+        |--family.py
+        |--open_data.py
+        |--person.py
+        |--place.py
+    |--pages\                        # Pages
+        |--article.py
+        |--family.py
+        |--logging_utils.py
+        |--open_data.py
+        |--person.py
+        |--place.py
+    |--scraper.py                    # Web-Scraper
+|--tests\                            # Unit Tests
 ```
 
 ## Installation
