@@ -1,6 +1,6 @@
 # HLS-scraper
 
-This project is a webscraper for the [Historical Dictionary of Switzerland (HDS)](https://hls-dhs-dss.ch/).
+This project is a webscraper for the [Historical Lexicon of Switzerland (HLS)](https://hls-dhs-dss.ch/).
 
 ## Project Structure
 
